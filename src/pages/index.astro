@@ -9,9 +9,9 @@ interface MarkdownFrontmatter {
   date: number;
 }
 
-const title = 'Creek';
-const description = 'A Theme for Astro';
-const seoDescription = 'Creek is a theme for Astro static site generator';
+const title = 'Mi Menú Saludable';
+const description = 'Las recetas más simples, saludables y balanceadas';
+const seoDescription = 'Encuentra menús simples, sanos y balanceados';
 
 const allPosts = await Astro.glob<MarkdownFrontmatter>('./posts/*.md');
 const sortedPosts = allPosts.sort((a, b) => new Date(b.frontmatter.pubDate).valueOf() - new Date(a.frontmatter.pubDate).valueOf());
@@ -39,7 +39,7 @@ const sortedPosts = allPosts.sort((a, b) => new Date(b.frontmatter.pubDate).valu
 
   <section class="flex space-x-8 justify-center text-xl pt-8 font-bold">
     <a href="/posts" class="mr-8" data-test="see-all-link">
-      See All<span class="squiggle">&rarr;</span>
+      Ver todos <span class="squiggle">&rarr;</span>
     </a>
   </section>
 

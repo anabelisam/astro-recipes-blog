@@ -5,8 +5,8 @@ const posts = Object.values(postImportResult);
 
 export const get = () =>
   rss({
-    title: "Astro Theme Creek",
-    description: "A Theme for Astro",
+    title: "Menú saludable",
+    description: "Recetas sanas y balanceadas",
     site: import.meta.env.SITE,
     items: import.meta.glob("./posts/**/*.md"),
   });
